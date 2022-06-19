@@ -1,0 +1,47 @@
+CRIAR LISTA
+TEM QUE TER CLASSE DO OBJETO
+GET E SET 
+
+
+
+package projeto;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.swing.JOptionPane;
+
+import cursojava.classes.Aluno;
+
+public class TestList {
+	
+	public static void main(String[] args) {
+	
+		List<Aluno> alunoA = new ArrayList<Aluno>();
+		
+		for (int i = 0; i < 10; i++) {
+			
+			String nome = JOptionPane.showInputDialog("Digite o nome do aluno");
+			
+			Aluno aluno3 = new Aluno();
+			
+			aluno3.setNome(nome);
+			
+			alunoA.add(aluno3);
+			
+				for(Aluno aluno : alunoA)
+			
+			System.out.println(aluno.getNome());
+			
+			
+			
+			
+		}
+		
+		
+		
+		
+		
+	}
+
+}
